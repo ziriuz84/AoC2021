@@ -20,8 +20,6 @@ let j;
 for (j = 3; j < data.length; j++) {
     if (Number(data[j]) > Number(data[j - 3])) {
         counterWindow++;
-        console.log(counterWindow);
     }
-    console.log("---------------");
 }
 console.log(counterWindow);
