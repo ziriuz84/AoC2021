@@ -1,6 +1,5 @@
 import path from "path";
 import fs from "fs";
-import { argv0 } from "process";
 
 const text: string = fs.readFileSync(path.join(__dirname, "./input2"), "utf-8");
 const data: string[] = text.split("\n");
