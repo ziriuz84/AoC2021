@@ -23,3 +23,20 @@ for (d in data) {
     }
 }
 console.log(position * depth);
+let aim = 0;
+position = 0;
+depth = 0;
+for (d in data) {
+    let dato = data[d].split(" ");
+    if (dato[0] == "forward") {
+        position += Number(dato[1]);
+        depth += Number(dato[1]) * aim;
+    }
+    if (dato[0] == "down") {
+        aim += Number(dato[1]);
+    }
+    if (dato[0] == "up") {
+        aim -= Number(dato[1]);
+    }
+}
+console.log(position * depth);
